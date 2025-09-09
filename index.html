@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Subalakshmi K | Server-Side Developer Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <h1 class="logo">Subalakshmi K</h1>
+      <nav class="nav">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#stack">Tech Stack</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#achievements">Achievements</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <h2>Hello, I'm <span>Subalakshmi K</span></h2>
+      <p>A passionate <strong>Server-Side Developer</strong> crafting scalable backend systems & APIs.</p>
+      <a href="#projects" class="btn">View My Work</a>
+    </div>
+  </section>
+
+  <!-- About Me -->
+  <section class="about" id="about">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>I specialize in building secure, efficient, and scalable server-side applications using technologies like Node.js, Express, Python (Django/Flask), and databases such as PostgreSQL and MongoDB. I’m passionate about clean architecture and performance-driven systems.</p>
+    </div>
+  </section>
+
+  <!-- Tech Stack -->
+  <section class="stack" id="stack">
+    <div class="container">
+      <h2>Tech Stack & Skills</h2>
+      <div class="stack-grid">
+        <div>Node.js</div>
+        <div>Express.js</div>
+        <div>Python</div>
+        <div>Django</div>
+        <div>Flask</div>
+        <div>PostgreSQL</div>
+        <div>MongoDB</div>
+        <div>Redis</div>
+        <div>Docker</div>
+        <div>REST APIs</div>
+        <div>GraphQL</div>
+        <div>CI/CD</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section class="projects" id="projects">
+    <div class="container">
+      <h2>Featured Projects</h2>
+      <div class="project-list">
+        <div class="project">
+          <h3>Inventory Management System</h3>
+          <p>Built with Django, PostgreSQL, and Redis. Handles thousands of requests with optimized queries and caching.</p>
+        </div>
+        <div class="project">
+          <h3>Real-Time Chat App</h3>
+          <p>WebSocket-based chat using Node.js, Socket.IO, and Redis pub/sub pattern.</p>
+        </div>
+        <div class="project">
+          <h3>REST API for E-commerce</h3>
+          <p>Scalable API built using Flask and integrated with Stripe for payments, tested with 90% coverage.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Achievements -->
+  <section class="achievements" id="achievements">
+    <div class="container">
+      <h2>Achievements & Certifications</h2>
+      <ul>
+        <li>Certified Backend Developer - Udemy (2023)</li>
+        <li>Deployed 15+ server-side applications in production</li>
+        <li>Top 5% on HackerRank for Python and SQL</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <form id="contactForm">
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>© 2025 Subalakshmi K. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- JS -->
+  <script>
+    // Simple form validation feedback
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      alert("Thank you for reaching out, I'll get back to you soon!");
+      this.reset();
+    });
+  </script>
+
+</body>
+</html>

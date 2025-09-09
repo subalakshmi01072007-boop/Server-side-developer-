@@ -1,0 +1,157 @@
+/* Nylon-inspired dark theme colors */
+:root {
+  --bg-color: #0f1117;
+  --accent-color: #5c8aff;
+  --text-color: #e0e0e0;
+  --section-bg: #1b1f29;
+  --card-bg: #252a36;
+}
+
+body {
+  margin: 0;
+  font-family: 'Fira Code', monospace;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+
+/* Header */
+.header {
+  background-color: var(--section-bg);
+  padding: 20px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 24px;
+  color: var(--accent-color);
+}
+
+.nav ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+}
+
+.nav a {
+  text-decoration: none;
+  color: var(--text-color);
+  transition: color 0.3s;
+}
+
+.nav a:hover {
+  color: var(--accent-color);
+}
+
+/* Hero */
+.hero {
+  background: linear-gradient(135deg, #121420, #1f2330);
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+}
+
+.hero span {
+  color: var(--accent-color);
+}
+
+.hero .btn {
+  display: inline-block;
+  margin-top: 20px;
+  background-color: var(--accent-color);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+/* Sections */
+section {
+  background-color: var(--section-bg);
+  margin-top: 20px;
+  padding: 60px 20px;
+  border-radius: 10px;
+}
+
+section h2 {
+  font-size: 2rem;
+  color: var(--accent-color);
+  margin-bottom: 20px;
+}
+
+/* Stack Grid */
+.stack-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 15px;
+}
+
+.stack-grid div {
+  background-color: var(--card-bg);
+  padding: 10px;
+  text-align: center;
+  border-radius: 6px;
+}
+
+/* Projects */
+.project-list {
+  display: grid;
+  gap: 20px;
+}
+
+.project {
+  background-color: var(--card-bg);
+  padding: 20px;
+  border-radius: 8px;
+}
+
+/* Achievements */
+.achievements ul {
+  padding-left: 20px;
+}
+
+.achievements li {
+  margin-bottom: 10px;
+}
+
+/* Contact */
+form input, form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  background-color: #2e3442;
+  color: white;
+  border: none;
+  border-radius: 4px;
+}
+
+form button {
+  background-color: var(--accent-color);
+  border: none;
+  padding: 10px 15px;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Footer */
+.footer {
+  background-color: #0d0f14;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+  color: #777;
+}
